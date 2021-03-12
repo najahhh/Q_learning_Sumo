@@ -1,0 +1,7 @@
+<routes>
+ <vType accel="2.9" decel="7.5" id="sumo_car" type="passenger" length="4.3" minGap="30" maxSpeed="13.89" sigma="0.5" />
+ <vType accel="2.9" decel="7.5" id="my_car" type="passenger" length="4.3" minGap="0" maxSpeed="27.89" departspeed="0" sigma="0.5" />
+ <route id="circle_route" edges="1to2 2to3"/>
+ <flow id="carflow" type="sumo_car" beg="0" end="0" number="9" from="1to2" to="2to3"/>
+ <vehicle depart="1" id="controlled_car" route="circle_route" type="my_car" color="1,0,0" />
+</routes>
